@@ -127,5 +127,9 @@
   "gitlens.currentLine.fontFamily": "Fira Code",
   "gitlens.blame.fontFamily": "Fira Code",
   "editor.fontSize": 18,
-  "workbench.tree.indent": 20
+  "workbench.tree.indent": 20,
+  "editor.quickSuggestions": {
+    "strings": "on",
+    "comments": "on"
+}
 }
