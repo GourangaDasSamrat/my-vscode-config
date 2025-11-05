@@ -1,29 +1,24 @@
 {
+  // theme
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.editor.enablePreview": false,
-  "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
-  "editor.wordWrap": "on",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "editor.fontFamily": "Fira Code",
-  "liveServer.settings.donotVerifyTags": true,
-  "editor.cursorBlinking": "phase",
-  "editor.hover.delay": 700,
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
-  "files.trimTrailingWhitespace": true,
-  "files.trimFinalNewlines": true,
+  "workbench.colorTheme": "Dracula Theme",
+
+  // fonts
+  "editor.fontFamily": "Mono Lisa, Fira Code",
+  "editor.inlineSuggest.fontFamily": "Mono Lisa, Fira Code",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.codeLensFontFamily": "Mono Lisa, Fira Code",
+  "debug.console.fontFamily": "Mono Lisa, Fira Code",
+  "scm.inputFontFamily": "Mono Lisa, Fira Code",
+  "errorLens.fontFamily": "Mono Lisa, Fira Code",
+  "gitlens.currentLine.fontFamily": "Mono Lisa, Fira Code",
+  "gitlens.blame.fontFamily": "Mono Lisa, Fira Code",
+  "markdown.preview.fontFamily": "Poppins, system-ui, 'Ubuntu', sans-serif",
+
+  // font ligatures
   "editor.fontLigatures": true,
   "terminal.integrated.fontLigatures": true,
-  "editor.cursorWidth": 3,
-  "editor.linkedEditing": true,
-  "window.customTitleBarVisibility": "never",
-  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${profileName}${separator}${appName} With Gouranga ",
-  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "editor.mouseWheelZoom": true,
-  "terminal.integrated.mouseWheelZoom": true,
-  "explorer.compactFolders": false,
-  "editor.inlineSuggest.fontFamily": "Fira Code",
+  "terminal.integrated.fontLigatures.enabled": true,
   "terminal.integrated.fontLigatures.fallbackLigatures": [
     "<--",
     "<---",
@@ -86,14 +81,28 @@
     "<!--",
     "<!---"
   ],
+
+  // minimap
+  "editor.minimap.autohide": "mouseover",
+  "editor.minimap.scale": 2,
+  "editor.minimap.renderCharacters": false,
+
+  // live server
   "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
-  "cSpell.blockCheckingWhenLineLengthGreaterThan": 100000,
-  "workbench.colorTheme": "Dracula Theme",
-  "files.autoSave": "afterDelay",
   "liveServer.settings.CustomBrowser": "firefox",
   "liveServer.settings.ChromeDebuggingAttachment": false,
   "liveServer.settings.root": "/",
-  "diffEditor.codeLens": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+
+  // git
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "always",
+
+  "gitlens.hovers.currentLine.over": "line",
+
+  // formating and linting
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always",
@@ -101,35 +110,59 @@
     "source.organizeImports": "always"
   },
   "eslint.format.enable": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+
+  // suggestions
+  "terminal.integrated.suggest.enabled": true,
   "terminal.integrated.suggest.quickSuggestions": {
     "commands": "on",
     "arguments": "on",
     "unknown": "on"
   },
-  "workbench.sideBar.location": "right",
-  "terminal.integrated.fontLigatures.enabled": true,
-  "window.titleBarStyle": "custom",
-  "gitlens.hovers.currentLine.over": "line",
-  "editor.accessibilitySupport": "off",
-  "markdown.preview.fontFamily": "'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
-  "git.enableSmartCommit": true,
-  "gitlens.ai.model": "openai:gpt-4.1",
-  "git.autofetch": true,
-  "workbench.startupEditor": "none",
-  "git.openRepositoryInParentFolders": "always",
-  "editor.codeLensFontFamily": "Fira Code",
-  "terminal.integrated.suggest.enabled": true,
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "cSpell.words": ["Gouranga", "Samrat"],
-  "debug.console.fontFamily": "Fira Code",
-  "scm.inputFontFamily": "Fira Code",
-  "errorLens.fontFamily": "Fira Code",
-  "gitlens.currentLine.fontFamily": "Fira Code",
-  "gitlens.blame.fontFamily": "Fira Code",
-  "editor.fontSize": 18,
-  "workbench.tree.indent": 20,
+
   "editor.quickSuggestions": {
     "strings": "on",
     "comments": "on"
-}
+  },
+
+  // spell cheacker
+  "cSpell.words": ["Gouranga", "Samrat"],
+  "cSpell.blockCheckingWhenLineLengthGreaterThan": 100000,
+
+  // app ui
+  "window.customTitleBarVisibility": "never",
+  "window.title": "${dirty}${activeEditorShort}${profileName}${separator}${appName} With Gouranga ",
+  "window.titleBarStyle": "custom",
+
+  "workbench.sideBar.location": "right",
+  "workbench.tree.indent": 20,
+
+  "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "none",
+
+  // editor ui
+  "editor.fontSize": 18,
+  "editor.wordWrap": "on",
+
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorWidth": 5,
+
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+
+  "editor.mouseWheelZoom": true,
+  "terminal.integrated.mouseWheelZoom": true,
+
+  "editor.linkedEditing": true,
+  "editor.accessibilitySupport": "off",
+  "editor.hover.delay": 700,
+  "explorer.compactFolders": false,
+
+  // files
+  "files.autoSave": "afterDelay",
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "diffEditor.codeLens": true
 }
