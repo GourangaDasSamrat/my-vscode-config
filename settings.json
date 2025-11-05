@@ -4,15 +4,15 @@
   "workbench.colorTheme": "Dracula Theme",
 
   // fonts
-  "editor.fontFamily": "Mono Lisa, Fira Code",
-  "editor.inlineSuggest.fontFamily": "Mono Lisa, Fira Code",
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "editor.codeLensFontFamily": "Mono Lisa, Fira Code",
-  "debug.console.fontFamily": "Mono Lisa, Fira Code",
-  "scm.inputFontFamily": "Mono Lisa, Fira Code",
-  "errorLens.fontFamily": "Mono Lisa, Fira Code",
-  "gitlens.currentLine.fontFamily": "Mono Lisa, Fira Code",
-  "gitlens.blame.fontFamily": "Mono Lisa, Fira Code",
+  "editor.fontFamily": "ComicShannsMono Nerd Font Mono,Fira Code",
+  "editor.inlineSuggest.fontFamily": "ComicShannsMono Nerd Font Mono, Fira Code",
+  "terminal.integrated.fontFamily": "ComicShannsMono Nerd Font Mono",
+  "editor.codeLensFontFamily": "ComicShannsMono Nerd Font Mono, Fira Code",
+  "debug.console.fontFamily": "ComicShannsMono Nerd Font Mono, Fira Code",
+  "scm.inputFontFamily": "ComicShannsMono Nerd Font Mono, Fira Code",
+  "errorLens.fontFamily": "ComicShannsMono Nerd Font Mono, Fira Code",
+  "gitlens.currentLine.fontFamily": "ComicShannsMono Nerd Font Mono, Fira Code",
+  "gitlens.blame.fontFamily": "ComicShannsMono Nerd Font Mono, Fira Code",
   "markdown.preview.fontFamily": "Poppins, system-ui, 'Ubuntu', sans-serif",
 
   // font ligatures
@@ -144,7 +144,7 @@
   "workbench.startupEditor": "none",
 
   // editor ui
-  "editor.fontSize": 18,
+  "editor.fontSize": 20,
   "editor.wordWrap": "on",
 
   "editor.cursorBlinking": "smooth",
