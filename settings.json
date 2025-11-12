@@ -130,13 +130,11 @@
   // spell cheacker
   "cSpell.words": ["Gouranga", "Samrat"],
   "cSpell.blockCheckingWhenLineLengthGreaterThan": 100000,
-
-  // app ui
-  "window.customTitleBarVisibility": "never",
   "window.title": "${dirty}${activeEditorShort}${profileName}${separator}${appName} With Gouranga ",
   "window.titleBarStyle": "custom",
 
   "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "top",
   "workbench.tree.indent": 20,
 
   "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
@@ -160,9 +158,15 @@
   "editor.hover.delay": 700,
   "explorer.compactFolders": false,
 
+  // terminal ui
+  "workbench.panel.showLabels": false,
+
   // files
   "files.autoSave": "afterDelay",
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
-  "diffEditor.codeLens": true
+
+  "diffEditor.codeLens": true,
+  "editor.autoIndentOnPaste": true,
+  "editor.snippetSuggestions": "top"
 }
