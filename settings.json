@@ -1,8 +1,4 @@
 {
-  // theme
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Dracula Theme",
-
   // fonts
   "editor.fontFamily": "ComicShannsMono Nerd Font Mono,Fira Code",
   "editor.inlineSuggest.fontFamily": "ComicShannsMono Nerd Font Mono, Fira Code",
@@ -13,7 +9,7 @@
   "errorLens.fontFamily": "ComicShannsMono Nerd Font Mono, Fira Code",
   "gitlens.currentLine.fontFamily": "ComicShannsMono Nerd Font Mono, Fira Code",
   "gitlens.blame.fontFamily": "ComicShannsMono Nerd Font Mono, Fira Code",
-  "markdown.preview.fontFamily": "Poppins, system-ui, 'Ubuntu', sans-serif",
+  "markdown.preview.fontFamily": "system-ui, 'Ubuntu', sans-serif",
 
   // font ligatures
   "editor.fontLigatures": true,
@@ -87,14 +83,6 @@
   "editor.minimap.scale": 2,
   "editor.minimap.renderCharacters": false,
 
-  // live server
-  "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
-  "liveServer.settings.CustomBrowser": "firefox",
-  "liveServer.settings.ChromeDebuggingAttachment": false,
-  "liveServer.settings.root": "/",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "liveServer.settings.donotVerifyTags": true,
-
   // git
   "git.enableSmartCommit": true,
   "git.autofetch": true,
@@ -130,11 +118,29 @@
   // spell cheacker
   "cSpell.words": ["Gouranga", "Samrat"],
   "cSpell.blockCheckingWhenLineLengthGreaterThan": 100000,
+
+  // tailwind intelisense
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.includeLanguages": {
+    "javascriptreact": "javascript",
+    "typescriptreact": "typescript"
+  },
+
+  // live server
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+  "liveServer.settings.CustomBrowser": "firefox",
+  "liveServer.settings.ChromeDebuggingAttachment": false,
+  "liveServer.settings.root": "/",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+
+  // window ui
   "window.title": "${dirty}${activeEditorShort}${profileName}${separator}${appName} With Gouranga ",
   "window.titleBarStyle": "custom",
 
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "top",
+  "workbench.panel.defaultLocation": "left",
   "workbench.tree.indent": 20,
 
   "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
@@ -160,13 +166,21 @@
 
   // terminal ui
   "workbench.panel.showLabels": false,
+  "terminal.integrated.fontSize": 15,
 
   // files
   "files.autoSave": "afterDelay",
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
+  "files.exclude": {
+    "**/node_modules": true
+  },
 
   "diffEditor.codeLens": true,
   "editor.autoIndentOnPaste": true,
-  "editor.snippetSuggestions": "top"
+  "editor.snippetSuggestions": "top",
+
+  // themes
+  "workbench.colorTheme": "Dracula Theme",
+  "workbench.iconTheme": "material-icon-theme"
 }
