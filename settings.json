@@ -2,8 +2,9 @@
   // fonts
   "editor.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
   "editor.inlineSuggest.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font','FiraCode Nerd Font Mono'",
   "editor.codeLensFontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
+  "editor.inlayHints.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
   "debug.console.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
   "scm.inputFontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
   "errorLens.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
@@ -11,7 +12,7 @@
   "gitlens.blame.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
   "markdown.preview.fontFamily": "system-ui, sans-serif",
 
-  // make font italic
+  // font styling (italic)
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -19,24 +20,19 @@
           "comment",
           "comment.line",
           "comment.block",
-
           "keyword",
           "keyword.operator",
           "keyword.control",
           "keyword.other",
           "storage.type",
           "storage.modifier",
-
           "entity.other.attribute-name",
-
           "meta.tag.attribute",
           "entity.other.attribute-name.html",
-
           "meta.import",
           "meta.export",
           "meta.module",
           "meta.decorator",
-
           "variable.language"
         ],
         "settings": {
@@ -48,7 +44,7 @@
 
   // font ligatures
   "editor.fontLigatures": true,
-  "terminal.integrated.fontLigatures": true,
+  "terminal.integrated.fontLigatures.featureSettings": "\"calt\" on",
   "terminal.integrated.fontLigatures.enabled": true,
   "terminal.integrated.fontLigatures.fallbackLigatures": [
     "<--",
@@ -113,18 +109,42 @@
     "<!---"
   ],
 
+  // editor ui
+  "editor.fontSize": 21,
+  "editor.wordWrap": "on",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorWidth": 5,
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.mouseWheelZoom": true,
+  "editor.linkedEditing": true,
+  "editor.accessibilitySupport": "off",
+  "editor.hover.delay": 700,
+  "editor.autoIndentOnPaste": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.snippetSuggestions": "top",
+
   // minimap
   "editor.minimap.autohide": "mouseover",
   "editor.minimap.scale": 2,
   "editor.minimap.renderCharacters": false,
 
-  // git
-  "git.enableSmartCommit": true,
-  "git.autofetch": true,
-  "git.openRepositoryInParentFolders": "always",
-  "gitlens.hovers.currentLine.over": "line",
+  // suggestions
+  "editor.quickSuggestions": {
+    "strings": "on",
+    "comments": "on"
+  },
+  "editor.quickSuggestionsDelay": 0,
+  "editor.suggestOnTriggerCharacters": true,
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.suggest.quickSuggestions": {
+    "commands": "on",
+    "arguments": "on",
+    "unknown": "on"
+  },
 
-  // formating and linting
+  // formatting & linting
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
@@ -135,32 +155,44 @@
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
 
-  // suggestions
-  "terminal.integrated.suggest.enabled": true,
-  "terminal.integrated.suggest.quickSuggestions": {
-    "commands": "on",
-    "arguments": "on",
-    "unknown": "on"
-  },
+  // typescript / javascript
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
 
-  "editor.quickSuggestions": {
-    "strings": "on",
-    "comments": "on"
-  },
+  // git & gitlens
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "always",
+  "gitlens.hovers.currentLine.over": "line",
 
-  // spell cheacker
+  // spell checker
   "cSpell.words": ["Gouranga", "Samrat"],
   "cSpell.blockCheckingWhenLineLengthGreaterThan": 100000,
 
-  // tailwind intelisense
+  // tailwind css
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.includeLanguages": {
     "javascriptreact": "javascript",
     "typescriptreact": "typescript"
   },
+  "tailwindCSS.files.exclude": [
+    "**/.git/**",
+    "**/node_modules/**",
+    "**/.hg/**",
+    "**/.svn/**",
+    "**/.next/**"
+  ],
+
+  // emmet
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
 
   // live server
-  "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "--new-instance --no-remote",
   "liveServer.settings.CustomBrowser": "firefox",
   "liveServer.settings.ChromeDebuggingAttachment": false,
   "liveServer.settings.root": "/",
@@ -171,47 +203,45 @@
   "window.title": "${dirty}${activeEditorShort}${profileName}${separator}${appName} With Gouranga ",
   "window.titleBarStyle": "custom",
 
+  // workbench ui
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "top",
   "workbench.panel.defaultLocation": "left",
   "workbench.tree.indent": 20,
-
   "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
   "workbench.editor.enablePreview": false,
   "workbench.startupEditor": "none",
-
-  // editor ui
-  "editor.fontSize": 20,
-  "editor.wordWrap": "on",
-
-  "editor.cursorBlinking": "smooth",
-  "editor.cursorWidth": 5,
-
-  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-
-  "editor.mouseWheelZoom": true,
-  "terminal.integrated.mouseWheelZoom": true,
-
-  "editor.linkedEditing": true,
-  "editor.accessibilitySupport": "off",
-  "editor.hover.delay": 700,
-  "explorer.compactFolders": false,
+  "workbench.panel.showLabels": false,
 
   // terminal ui
-  "workbench.panel.showLabels": false,
+  "terminal.integrated.defaultLocation": "editor",
   "terminal.integrated.fontSize": 15,
+  "terminal.integrated.mouseWheelZoom": true,
 
   // files
   "files.autoSave": "afterDelay",
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
   "files.exclude": {
-    "**/node_modules": true
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/.git": true
   },
 
+  // search
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.next": true,
+    "**/.git": true
+  },
+
+  // diff editor
   "diffEditor.codeLens": true,
-  "editor.autoIndentOnPaste": true,
-  "editor.snippetSuggestions": "top",
+
+  // explorer
+  "explorer.compactFolders": false,
 
   // themes
   "workbench.colorTheme": "Dracula Theme",
