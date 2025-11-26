@@ -1,15 +1,50 @@
 {
   // fonts
-  "editor.fontFamily": "ComicShannsMono Nerd Font Mono,Fira Code",
-  "editor.inlineSuggest.fontFamily": "ComicShannsMono Nerd Font Mono, Fira Code",
-  "terminal.integrated.fontFamily": "ComicShannsMono Nerd Font Mono",
-  "editor.codeLensFontFamily": "ComicShannsMono Nerd Font Mono, Fira Code",
-  "debug.console.fontFamily": "ComicShannsMono Nerd Font Mono, Fira Code",
-  "scm.inputFontFamily": "ComicShannsMono Nerd Font Mono, Fira Code",
-  "errorLens.fontFamily": "ComicShannsMono Nerd Font Mono, Fira Code",
-  "gitlens.currentLine.fontFamily": "ComicShannsMono Nerd Font Mono, Fira Code",
-  "gitlens.blame.fontFamily": "ComicShannsMono Nerd Font Mono, Fira Code",
-  "markdown.preview.fontFamily": "system-ui, 'Ubuntu', sans-serif",
+  "editor.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
+  "editor.inlineSuggest.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.codeLensFontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
+  "debug.console.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
+  "scm.inputFontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
+  "errorLens.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
+  "gitlens.currentLine.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
+  "gitlens.blame.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
+  "markdown.preview.fontFamily": "system-ui, sans-serif",
+
+  // make font italic
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "comment.line",
+          "comment.block",
+
+          "keyword",
+          "keyword.operator",
+          "keyword.control",
+          "keyword.other",
+          "storage.type",
+          "storage.modifier",
+
+          "entity.other.attribute-name",
+
+          "meta.tag.attribute",
+          "entity.other.attribute-name.html",
+
+          "meta.import",
+          "meta.export",
+          "meta.module",
+          "meta.decorator",
+
+          "variable.language"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
 
   // font ligatures
   "editor.fontLigatures": true,
@@ -87,15 +122,13 @@
   "git.enableSmartCommit": true,
   "git.autofetch": true,
   "git.openRepositoryInParentFolders": "always",
-
   "gitlens.hovers.currentLine.over": "line",
 
   // formating and linting
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always",
-    "source.fixAll.tslint": "always",
-    "source.organizeImports": "always"
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
   },
   "eslint.format.enable": true,
   "editor.formatOnSave": true,
