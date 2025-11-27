@@ -119,6 +119,9 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.mouseWheelZoom": true,
   "editor.linkedEditing": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.autoClosingOvertype": "always",
   "html.autoClosingTags": true,
   "javascript.autoClosingTags": true,
   "typescript.autoClosingTags": true,
@@ -160,8 +163,6 @@
   "editor.formatOnType": true,
 
   // typescript / javascript
-  "typescript.inlayHints.parameterNames.enabled": "all",
-  "javascript.inlayHints.parameterNames.enabled": "all",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
 
