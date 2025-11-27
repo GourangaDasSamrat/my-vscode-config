@@ -1,7 +1,6 @@
 VS Code Extensions list that i use:
 
 - Auto Close Tag
-- Auto Rename Tag
 - Code Spell Checker
 - Dracula Theme Official
 - Error Lens
@@ -10,7 +9,6 @@ VS Code Extensions list that i use:
 - GitLens — Git supercharged
 - JavaScript (ES6) code snippets
 - Live Server
-- Markdown All in One
 - Material Icon Theme
 - Prettier - Code formatter
 - Tailwind CSS IntelliSense
