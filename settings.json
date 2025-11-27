@@ -227,6 +227,19 @@
     "**/.next": true,
     "**/.git": true
   },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/dist/**": true,
+    "**/.next/**": true,
+    "**/build/**": true,
+    "**/.cache/**": true,
+    "**/coverage/**": true,
+    "**/.vscode/**": true,
+    "**/.turbo/**": true,
+    "**/out/**": true
+  },
 
   // search
   "search.exclude": {
@@ -234,8 +247,26 @@
     "**/dist": true,
     "**/build": true,
     "**/.next": true,
-    "**/.git": true
+    "**/.git": true,
+    "**/coverage": true,
+    "**/.turbo": true,
+    "**/yarn.lock": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true
   },
+
+  // extensions
+  "extensions.autoCheckUpdates": false,
+  "extensions.autoUpdate": false,
+  "extensions.experimental.affinity": {
+    "eamodio.gitlens": 1,
+    "dbaeumer.vscode-eslint": 1,
+    "esbenp.prettier-vscode": 1
+  },
+
+  // disable unused things
+  "telemetry.telemetryLevel": "off",
+  "gitlens.telemetry.enabled": false,
 
   // diff editor
   "diffEditor.codeLens": true,
