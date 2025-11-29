@@ -157,20 +157,25 @@
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "explicit"
   },
+
+  "eslint.run": "onSave",
   "eslint.format.enable": true,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
 
   // typescript / javascript
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
 
-  // git & gitlens
+  // git, gitlens & commitSage
   "git.enableSmartCommit": true,
   "git.autofetch": true,
   "git.openRepositoryInParentFolders": "always",
   "gitlens.hovers.currentLine.over": "line",
+  "commitSage.provider.type": "gemini",
+  "commitSage.gemini.model": "gemini-2.5-flash",
+  "commitSage.commit.commitFormat": "conventional",
+  "commitSage.commit.promptForRefs": true,
 
   // spell checker
   "cSpell.words": ["Gouranga", "Samrat"],
@@ -197,8 +202,7 @@
   },
 
   // live server
-  "liveServer.settings.AdvanceCustomBrowserCmdLine": "--new-instance --no-remote",
-  "liveServer.settings.CustomBrowser": "firefox",
+  "liveServer.settings.CustomBrowser": "firefox:PrivateMode",
   "liveServer.settings.ChromeDebuggingAttachment": false,
   "liveServer.settings.root": "/",
   "liveServer.settings.donotShowInfoMsg": true,
