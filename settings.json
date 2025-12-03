@@ -1,16 +1,16 @@
 {
   // fonts
-  "editor.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
-  "editor.inlineSuggest.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
+  "editor.fontFamily": "'Operator Mono Lig','MonoLisa','JetBrainsMono Nerd Font'",
+  "editor.inlineSuggest.fontFamily": "'Operator Mono Lig','MonoLisa','JetBrainsMono Nerd Font'",
   "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font','FiraCode Nerd Font Mono'",
-  "editor.codeLensFontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
-  "editor.inlayHints.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
-  "debug.console.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
-  "scm.inputFontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
-  "errorLens.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
-  "gitlens.currentLine.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
-  "gitlens.blame.fontFamily": "'Operator Mono','MonoLisa','JetBrainsMono Nerd Font'",
-  "markdown.preview.fontFamily": "system-ui, sans-serif",
+  "editor.codeLensFontFamily": "'Operator Mono Lig','MonoLisa','JetBrainsMono Nerd Font'",
+  "editor.inlayHints.fontFamily": "'Operator Mono Lig','MonoLisa','JetBrainsMono Nerd Font'",
+  "debug.console.fontFamily": "'Operator Mono Lig','MonoLisa','JetBrainsMono Nerd Font'",
+  "scm.inputFontFamily": "'Operator Mono Lig','MonoLisa','JetBrainsMono Nerd Font'",
+  "errorLens.fontFamily": "'Operator Mono Lig','MonoLisa','JetBrainsMono Nerd Font'",
+  "gitlens.currentLine.fontFamily": "'Operator Mono Lig','MonoLisa','JetBrainsMono Nerd Font'",
+  "gitlens.blame.fontFamily": "'Operator Mono Lig','MonoLisa','JetBrainsMono Nerd Font'",
+  "markdown.preview.fontFamily": "'Founders Grotesk',-apple-system, system-ui, 'Ubuntu",
 
   // font styling (italic)
   "editor.tokenColorCustomizations": {
@@ -203,7 +203,6 @@
 
   // live server
   "liveServer.settings.CustomBrowser": "firefox:PrivateMode",
-  "liveServer.settings.ChromeDebuggingAttachment": false,
   "liveServer.settings.root": "/",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
@@ -211,6 +210,8 @@
   // window ui
   "window.title": "${dirty}${activeEditorShort}${profileName}${separator}${appName} With Gouranga ",
   "window.titleBarStyle": "custom",
+  "window.confirmBeforeClose": "always",
+  "window.commandCenter": false,
 
   // workbench ui
   "workbench.sideBar.location": "right",
