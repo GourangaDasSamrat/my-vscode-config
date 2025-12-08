@@ -11,4 +11,4 @@ VS Code Extensions list that i use:
 - Material Icon Theme
 - Prettier - Code formatter
 - Tailwind CSS IntelliSense
- 
+- WordHub
