@@ -1,4 +1,4 @@
-VS Code Extensions list that i use:
+# VS Code Extensions list that i use:
 
 - Code Spell Checker
 - Commit Sage
@@ -12,3 +12,6 @@ VS Code Extensions list that i use:
 - Prettier - Code formatter
 - Tailwind CSS IntelliSense
 - WordHub
+
+## For c and c++ 
+- clangd
