@@ -153,6 +153,9 @@
 
   // formatting & linting
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[c,cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "explicit"
