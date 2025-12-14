@@ -13,5 +13,10 @@
 - Tailwind CSS IntelliSense
 - WordHub
 
-## For c and c++ 
+## For c and c++
+
 - clangd
+
+## Optional
+
+- Code Runner

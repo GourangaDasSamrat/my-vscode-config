@@ -30,4 +30,4 @@ cp -r ./my-vscode-config/* ~/.config/Code/User/
 - Keybindings
 - Extensions recommendations
 
-Last updated: 2025-12-03
+Last updated: 2025-12-14

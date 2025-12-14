@@ -153,7 +153,10 @@
 
   // formatting & linting
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[c,cpp]": {
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "[c]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   },
   "editor.codeActionsOnSave": {
@@ -180,10 +183,6 @@
   "commitSage.commit.commitFormat": "conventional",
   "commitSage.commit.promptForRefs": true,
 
-  // spell checker
-  "cSpell.words": ["Gouranga", "Samrat"],
-  "cSpell.blockCheckingWhenLineLengthGreaterThan": 100000,
-
   // tailwind css
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.includeLanguages": {
@@ -198,6 +197,10 @@
     "**/.next/**"
   ],
 
+  // spell checker
+  "cSpell.words": ["Gouranga", "Samrat"],
+  "cSpell.blockCheckingWhenLineLengthGreaterThan": 100000,
+
   // emmet
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
@@ -209,6 +212,15 @@
   "liveServer.settings.root": "/",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
+
+  // error lens
+  "errorLens.fontStyleItalic": true,
+  "errorLens.enabledDiagnosticLevels": ["hint", "error", "info", "warning"],
+  "errorLens.delay": 0,
+
+  // code runner
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.clearPreviousOutput": true,
 
   // window ui
   "window.title": "${dirty}${activeEditorShort}${profileName}${separator}${appName} With Gouranga ",
