@@ -110,7 +110,7 @@
   ],
 
   // editor ui
-  "editor.fontSize": 21,
+  "editor.fontSize": 22,
   "editor.wordWrap": "on",
   "editor.cursorBlinking": "smooth",
   "editor.cursorWidth": 5,
@@ -200,6 +200,7 @@
   // spell checker
   "cSpell.words": ["Gouranga", "Samrat"],
   "cSpell.blockCheckingWhenLineLengthGreaterThan": 100000,
+  "cSpell.caseSensitive": true,
 
   // emmet
   "emmet.includeLanguages": {
