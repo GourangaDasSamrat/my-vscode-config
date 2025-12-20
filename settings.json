@@ -1,16 +1,16 @@
 {
   // fonts
-  "editor.fontFamily": "'Operator Mono Lig','MonoLisa','JetBrainsMono Nerd Font'",
-  "editor.inlineSuggest.fontFamily": "'Operator Mono Lig','MonoLisa','JetBrainsMono Nerd Font'",
-  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font','FiraCode Nerd Font Mono'",
-  "editor.codeLensFontFamily": "'Operator Mono Lig','MonoLisa','JetBrainsMono Nerd Font'",
-  "editor.inlayHints.fontFamily": "'Operator Mono Lig','MonoLisa','JetBrainsMono Nerd Font'",
-  "debug.console.fontFamily": "'Operator Mono Lig','MonoLisa','JetBrainsMono Nerd Font'",
-  "scm.inputFontFamily": "'Operator Mono Lig','MonoLisa','JetBrainsMono Nerd Font'",
-  "errorLens.fontFamily": "'Operator Mono Lig','MonoLisa','JetBrainsMono Nerd Font'",
-  "gitlens.currentLine.fontFamily": "'Operator Mono Lig','MonoLisa','JetBrainsMono Nerd Font'",
-  "gitlens.blame.fontFamily": "'Operator Mono Lig','MonoLisa','JetBrainsMono Nerd Font'",
-  "markdown.preview.fontFamily": "'Founders Grotesk',-apple-system, system-ui, 'Ubuntu",
+  "editor.fontFamily": "'Operator Mono Lig', 'Cartograph CF', 'MonoLisa', 'JetBrainsMono Nerd Font'",
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'FiraCode Nerd Font Mono'",
+  "editor.inlineSuggest.fontFamily": "'Cartograph CF', 'MonoLisa', 'JetBrainsMono Nerd Font'",
+  "editor.inlayHints.fontFamily": "'Cartograph CF','MonoLisa', 'JetBrainsMono Nerd Font'",
+  "editor.codeLensFontFamily": "'Operator Mono Lig', 'Cartograph CF', 'MonoLisa','JetBrainsMono Nerd Font'",
+  "debug.console.fontFamily": "'Operator Mono Lig', 'Cartograph CF', 'MonoLisa','JetBrainsMono Nerd Font'",
+  "scm.inputFontFamily": "'Operator Mono Lig', 'Cartograph CF', 'MonoLisa','JetBrainsMono Nerd Font'",
+  "errorLens.fontFamily": "'Cartograph CF', 'Operator Mono Lig', 'MonoLisa','JetBrainsMono Nerd Font'",
+  "gitlens.currentLine.fontFamily": "'Cartograph CF', 'MonoLisa', 'JetBrainsMono Nerd Font'",
+  "gitlens.blame.fontFamily": "'Operator Mono Lig', 'Cartograph CF','MonoLisa','JetBrainsMono Nerd Font'",
+  "markdown.preview.fontFamily": "'Founders Grotesk', 'MonoLisa', -apple-system, system-ui",
 
   // font styling (italic)
   "editor.tokenColorCustomizations": {
