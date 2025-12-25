@@ -165,6 +165,7 @@
   },
   "editor.quickSuggestionsDelay": 0,
   "editor.suggestOnTriggerCharacters": true,
+  "editor.inlineSuggest.edits.showCollapsed": true,
   "terminal.integrated.suggest.enabled": true,
   "terminal.integrated.suggest.quickSuggestions": {
     "commands": "on",
@@ -255,6 +256,8 @@
   "scm.repositories.explorer": true,
   "scm.repositories.selectionMode": "single",
   "gitlens.hovers.currentLine.over": "line",
+  "gitlens.defaultGravatarsStyle": "monsterid",
+  "gitlens.graph.layout": "editor",
   "commitSage.provider.type": "gemini",
   "commitSage.gemini.model": "gemini-2.5-flash",
   "commitSage.commit.commitFormat": "conventional",
@@ -277,12 +280,14 @@
   // spell checker
   "cSpell.words": ["Gouranga", "Samrat"],
   "cSpell.blockCheckingWhenLineLengthGreaterThan": 100000,
+  "cSpell.advanced.feature.useReferenceProviderWithRename": true,
   "cSpell.caseSensitive": true,
 
   // emmet
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
-    "typescript": "typescriptreact"
+    "typescript": "typescriptreact",
+    "vue-html": "html"
   },
 
   // live server
@@ -295,6 +300,7 @@
   "errorLens.fontStyleItalic": true,
   "errorLens.enabledDiagnosticLevels": ["hint", "error", "info", "warning"],
   "errorLens.delay": 0,
+  "errorLens.enableOnDiffView": true,
 
   // code runner
   "code-runner.saveFileBeforeRun": true,
@@ -306,5 +312,7 @@
 
   // themes
   "workbench.colorTheme": "Dracula Theme",
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.activeIconPack": "react_redux",
+  "material-icon-theme.hidesExplorerArrows": true
 }

@@ -88,7 +88,7 @@
     "command": "-code-runner.run"
   },
   {
-    "key": "alt+c",
+    "key": "alt+f",
     "command": "editor.foldAll",
     "when": "editorTextFocus && foldingEnabled"
   },
