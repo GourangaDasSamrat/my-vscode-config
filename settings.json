@@ -173,8 +173,6 @@
     "unknown": "on"
   },
 
-  // terminal
-
   // formatting & linting
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[cpp]": {
