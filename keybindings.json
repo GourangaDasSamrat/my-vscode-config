@@ -70,7 +70,7 @@
     "command": "workbench.action.toggleStatusbarVisibility"
   },
   {
-    "key": "ctrl+shift+d",
+    "key": "alt+d",
     "command": "editor.action.addSelectionToNextFindMatch",
     "when": "editorFocus"
   },

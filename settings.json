@@ -137,6 +137,27 @@
   "editor.minimap.scale": 2,
   "editor.minimap.renderCharacters": false,
 
+  // window ui
+  "window.title": "${dirty}${activeEditorShort}${profileName}${separator}${appName} With Gouranga ",
+  "window.titleBarStyle": "custom",
+  "window.confirmBeforeClose": "always",
+  "window.commandCenter": false,
+
+  // workbench ui
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "top",
+  "workbench.panel.defaultLocation": "left",
+  "workbench.tree.indent": 20,
+  "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "none",
+  "workbench.panel.showLabels": false,
+
+  // terminal ui
+  "terminal.integrated.defaultLocation": "editor",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.mouseWheelZoom": true,
+
   // suggestions
   "editor.quickSuggestions": {
     "strings": "on",
@@ -150,6 +171,8 @@
     "arguments": "on",
     "unknown": "on"
   },
+
+  // terminal
 
   // formatting & linting
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -173,10 +196,64 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
 
+  // files
+  "files.autoSave": "afterDelay",
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/.git": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/dist/**": true,
+    "**/.next/**": true,
+    "**/build/**": true,
+    "**/.cache/**": true,
+    "**/coverage/**": true,
+    "**/.vscode/**": true,
+    "**/.turbo/**": true,
+    "**/out/**": true
+  },
+
+  // search
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.next": true,
+    "**/.git": true,
+    "**/coverage": true,
+    "**/.turbo": true,
+    "**/yarn.lock": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true
+  },
+
+  // explorer
+  "explorer.compactFolders": false,
+
+  // diff editor
+  "diffEditor.codeLens": true,
+
+  // extensions
+  "extensions.autoCheckUpdates": false,
+  "extensions.autoUpdate": false,
+  "extensions.experimental.affinity": {
+    "eamodio.gitlens": 1,
+    "dbaeumer.vscode-eslint": 1,
+    "esbenp.prettier-vscode": 1
+  },
+
   // git, gitlens & commitSage
   "git.enableSmartCommit": true,
   "git.autofetch": true,
   "git.openRepositoryInParentFolders": "always",
+  "scm.repositories.explorer": true,
+  "scm.repositories.selectionMode": "single",
   "gitlens.hovers.currentLine.over": "line",
   "commitSage.provider.type": "gemini",
   "commitSage.gemini.model": "gemini-2.5-flash",
@@ -223,82 +300,9 @@
   "code-runner.saveFileBeforeRun": true,
   "code-runner.clearPreviousOutput": true,
 
-  // window ui
-  "window.title": "${dirty}${activeEditorShort}${profileName}${separator}${appName} With Gouranga ",
-  "window.titleBarStyle": "custom",
-  "window.confirmBeforeClose": "always",
-  "window.commandCenter": false,
-
-  // workbench ui
-  "workbench.sideBar.location": "right",
-  "workbench.activityBar.location": "top",
-  "workbench.panel.defaultLocation": "left",
-  "workbench.tree.indent": 20,
-  "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
-  "workbench.editor.enablePreview": false,
-  "workbench.startupEditor": "none",
-  "workbench.panel.showLabels": false,
-
-  // terminal ui
-  "terminal.integrated.defaultLocation": "editor",
-  "terminal.integrated.fontSize": 15,
-  "terminal.integrated.mouseWheelZoom": true,
-
-  // files
-  "files.autoSave": "afterDelay",
-  "files.trimTrailingWhitespace": true,
-  "files.trimFinalNewlines": true,
-  "files.exclude": {
-    "**/node_modules": true,
-    "**/.next": true,
-    "**/.git": true
-  },
-  "files.watcherExclude": {
-    "**/node_modules/**": true,
-    "**/.git/objects/**": true,
-    "**/.git/subtree-cache/**": true,
-    "**/dist/**": true,
-    "**/.next/**": true,
-    "**/build/**": true,
-    "**/.cache/**": true,
-    "**/coverage/**": true,
-    "**/.vscode/**": true,
-    "**/.turbo/**": true,
-    "**/out/**": true
-  },
-
-  // search
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/dist": true,
-    "**/build": true,
-    "**/.next": true,
-    "**/.git": true,
-    "**/coverage": true,
-    "**/.turbo": true,
-    "**/yarn.lock": true,
-    "**/package-lock.json": true,
-    "**/pnpm-lock.yaml": true
-  },
-
-  // extensions
-  "extensions.autoCheckUpdates": false,
-  "extensions.autoUpdate": false,
-  "extensions.experimental.affinity": {
-    "eamodio.gitlens": 1,
-    "dbaeumer.vscode-eslint": 1,
-    "esbenp.prettier-vscode": 1
-  },
-
   // disable unused things
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
-
-  // diff editor
-  "diffEditor.codeLens": true,
-
-  // explorer
-  "explorer.compactFolders": false,
 
   // themes
   "workbench.colorTheme": "Dracula Theme",
