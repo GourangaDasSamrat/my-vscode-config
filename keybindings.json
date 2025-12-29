@@ -36,7 +36,7 @@
     "command": "workbench.action.toggleMultiCursorModifier"
   },
   {
-    "key": "ctrl+g ctrl+l",
+    "key": "ctrl+alt+s",
     "command": "extension.liveServer.goOnline",
     "when": "editorTextFocus"
   },
@@ -46,7 +46,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+g ctrl+l",
+    "key": "ctrl+alt+q",
     "command": "extension.liveServer.goOffline",
     "when": "editorTextFocus"
   },
@@ -106,5 +106,21 @@
     "key": "ctrl+k ctrl+j",
     "command": "-editor.unfoldAll",
     "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+alt+b",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "-workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "code-runner.stop"
+  },
+  {
+    "key": "ctrl+alt+m",
+    "command": "-code-runner.stop"
   }
 ]

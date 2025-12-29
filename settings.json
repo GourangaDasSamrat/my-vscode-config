@@ -118,16 +118,9 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.mouseWheelZoom": true,
-  "editor.linkedEditing": true,
-  "editor.autoClosingBrackets": "always",
-  "editor.autoClosingQuotes": "always",
-  "editor.autoClosingOvertype": "always",
-  "html.autoClosingTags": true,
-  "javascript.autoClosingTags": true,
-  "typescript.autoClosingTags": true,
 
   "editor.accessibilitySupport": "off",
-  "editor.hover.delay": 700,
+  "editor.hover.delay": 0,
   "editor.autoIndentOnPaste": true,
   "editor.stickyScroll.enabled": true,
   "editor.snippetSuggestions": "top",
@@ -161,11 +154,13 @@
   // suggestions
   "editor.quickSuggestions": {
     "strings": "on",
-    "comments": "on"
+    "comments": "on",
+    "other": "on"
   },
   "editor.quickSuggestionsDelay": 0,
   "editor.suggestOnTriggerCharacters": true,
   "editor.inlineSuggest.edits.showCollapsed": true,
+  "editor.suggest.preview": true,
   "terminal.integrated.suggest.enabled": true,
   "terminal.integrated.suggest.quickSuggestions": {
     "commands": "on",
@@ -173,10 +168,21 @@
     "unknown": "on"
   },
 
+  // auto rename / closing tags and comments
+  "editor.linkedEditing": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.autoClosingOvertype": "always",
+  "html.autoClosingTags": true,
+  "javascript.autoClosingTags": true,
+  "typescript.autoClosingTags": true,
+  "editor.autoClosingComments": "always",
+
   // formatting & linting
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[cpp]": {
-    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    "editor.suggest.insertMode": "replace"
   },
   "[c]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
@@ -194,6 +200,24 @@
   // typescript / javascript
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.variableTypes.enabled": true,
+
+  // c / c++
+  "clangd.arguments": [
+    "--background-index",
+    "--clang-tidy",
+    "--completion-style=detailed",
+    "--header-insertion=iwyu",
+    "--header-insertion-decorators",
+    "--all-scopes-completion",
+    "--function-arg-placeholders",
+    "--log=verbose",
+    "--pretty",
+    "--pch-storage=memory"
+  ],
+  "clangd.onConfigChanged": "restart",
 
   // files
   "files.autoSave": "afterDelay",
@@ -295,10 +319,10 @@
   "liveServer.settings.donotVerifyTags": true,
 
   // error lens
-  "errorLens.fontStyleItalic": true,
-  "errorLens.enabledDiagnosticLevels": ["hint", "error", "info", "warning"],
   "errorLens.delay": 0,
+  "errorLens.enabledDiagnosticLevels": ["hint", "error", "info", "warning"],
   "errorLens.enableOnDiffView": true,
+  "errorLens.fontStyleItalic": true,
 
   // code runner
   "code-runner.saveFileBeforeRun": true,
