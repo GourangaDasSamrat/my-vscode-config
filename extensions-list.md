@@ -10,6 +10,7 @@
 - Live Server
 - Material Icon Theme
 - Prettier - Code formatter
+- Pretty TypeScript Errors
 - Tailwind CSS IntelliSense
 - WordHub
 
