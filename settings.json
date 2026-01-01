@@ -160,7 +160,6 @@
   "editor.quickSuggestionsDelay": 0,
   "editor.suggestOnTriggerCharacters": true,
   "editor.inlineSuggest.edits.showCollapsed": true,
-  "editor.suggest.preview": true,
   "terminal.integrated.suggest.enabled": true,
   "terminal.integrated.suggest.quickSuggestions": {
     "commands": "on",
@@ -202,7 +201,6 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.inlayHints.parameterNames.enabled": "all",
   "javascript.inlayHints.parameterNames.enabled": "all",
-  "javascript.inlayHints.variableTypes.enabled": true,
 
   // c / c++
   "clangd.arguments": [
@@ -317,6 +315,7 @@
   "liveServer.settings.root": "/",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.wait": 10,
 
   // error lens
   "errorLens.delay": 0,
