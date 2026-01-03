@@ -119,11 +119,11 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.mouseWheelZoom": true,
 
+  "breadcrumbs.filePath": "last",
   "editor.accessibilitySupport": "off",
   "editor.hover.delay": 0,
   "editor.autoIndentOnPaste": true,
   "editor.stickyScroll.enabled": true,
-  "editor.snippetSuggestions": "top",
 
   // minimap
   "editor.minimap.autohide": "mouseover",
@@ -160,6 +160,7 @@
   "editor.quickSuggestionsDelay": 0,
   "editor.suggestOnTriggerCharacters": true,
   "editor.inlineSuggest.edits.showCollapsed": true,
+  "editor.snippetSuggestions": "top",
   "terminal.integrated.suggest.enabled": true,
   "terminal.integrated.suggest.quickSuggestions": {
     "commands": "on",
@@ -202,7 +203,7 @@
   "typescript.inlayHints.parameterNames.enabled": "all",
   "javascript.inlayHints.parameterNames.enabled": "all",
 
-  // c / c++
+  // clangd
   "clangd.arguments": [
     "--background-index",
     "--clang-tidy",
@@ -213,6 +214,7 @@
     "--function-arg-placeholders",
     "--log=verbose",
     "--pretty",
+    "--fallback-style=Google",
     "--pch-storage=memory"
   ],
   "clangd.onConfigChanged": "restart",

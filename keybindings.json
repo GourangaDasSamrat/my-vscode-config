@@ -122,5 +122,17 @@
   {
     "key": "ctrl+alt+m",
     "command": "-code-runner.stop"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.files.action.compareNewUntitledTextFiles"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.files.newUntitledFile"
   }
 ]
