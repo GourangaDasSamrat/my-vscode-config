@@ -1,23 +1,32 @@
 # VS Code Extensions list that i use:
 
-- Code Spell Checker
-- Commit Sage
+## Theme
 - Dracula Theme Official
-- Error Lens
-- ES7+ React/Redux/React-Native snippets
-- ESLint
-- GitLens — Git supercharged
-- Live Server
 - Material Icon Theme
+
+## Compulsory
+- Error Lens
+- Code Spell Checker
+- GitLens — Git supercharged
+- Commit Sage
+
+## For web dev
 - Prettier - Code formatter
-- Pretty TypeScript Errors
+- ESLint
+- Live Server
+- ES7+ React/Redux/React-Native snippets
 - Tailwind CSS IntelliSense
-- WordHub
 
 ## For c and c++
 
 - clangd
 
+## For TypeScript
+
+- Pretty TypeScript Errors
+
 ## Optional
 
 - Code Runner
+- WordHub
+- Time
