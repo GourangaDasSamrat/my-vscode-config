@@ -1,32 +1,32 @@
 # VS Code Extensions list that i use:
 
-## Theme
+## Compulsory (for all profile)
+
 - Dracula Theme Official
 - Material Icon Theme
-
-## Compulsory
 - Error Lens
 - Code Spell Checker
 - GitLens — Git supercharged
 - Commit Sage
 
-## For web dev
+## Optional
+
+- WordHub
+- Time
+
+## Default profile (for frontend development)
 - Prettier - Code formatter
 - ESLint
 - Live Server
 - ES7+ React/Redux/React-Native snippets
 - Tailwind CSS IntelliSense
 
-## For c and c++
-
-- clangd
-
-## For TypeScript
+## Optional (for ts development)
 
 - Pretty TypeScript Errors
 
-## Optional
 
+## C/C++ Dev profile (for c/c++ development)
+
+- clangd
 - Code Runner
-- WordHub
-- Time
