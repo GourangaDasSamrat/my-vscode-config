@@ -131,10 +131,11 @@
   "editor.minimap.renderCharacters": false,
 
   // window ui
-  "window.title": "${dirty}${activeEditorShort}${profileName}${separator}${appName} With Gouranga ",
+  "window.title": "${dirty}${activeEditorShort}${separator}${appName} with Gouranga",
   "window.titleBarStyle": "custom",
   "window.confirmBeforeClose": "always",
   "window.commandCenter": false,
+  "window.newWindowProfile": "Default",
 
   // workbench ui
   "workbench.sideBar.location": "right",
