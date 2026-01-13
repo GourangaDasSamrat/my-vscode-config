@@ -1,6 +1,6 @@
 # VS Code Extensions list that i use:
 
-## Compulsory (for all profile)
+## Default profile
 
 - Dracula Theme Official
 - Material Icon Theme
@@ -13,8 +13,10 @@
 
 - WordHub
 - Time
+- shfmt (its only for default profile)
 
-## Default profile (for frontend development)
+## Web Dev Profile (for web development)
+
 - Prettier - Code formatter
 - ESLint
 - Live Server
@@ -24,7 +26,6 @@
 ## Optional (for ts development)
 
 - Pretty TypeScript Errors
-
 
 ## C/C++ Dev profile (for c/c++ development)
 
