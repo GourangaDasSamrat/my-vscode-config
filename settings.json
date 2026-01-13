@@ -350,7 +350,6 @@
   // code runner
   "code-runner.saveFileBeforeRun": true,
   "code-runner.clearPreviousOutput": true,
-  "code-runner.runInTerminal": true,
 
   // disable unused things
   "telemetry.telemetryLevel": "off",
