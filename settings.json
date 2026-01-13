@@ -148,9 +148,11 @@
   "workbench.panel.showLabels": false,
 
   // terminal ui
-  "terminal.integrated.defaultLocation": "editor",
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.mouseWheelZoom": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.smoothScrolling": true,
 
   // suggestions
   "editor.quickSuggestions": {
@@ -180,6 +182,9 @@
   "editor.autoClosingComments": "always",
 
   // formatting & linting
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[cpp]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
@@ -191,6 +196,7 @@
   "[shellscript]": {
     "editor.defaultFormatter": "mkhl.shfmt"
   },
+
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "explicit"
@@ -198,8 +204,6 @@
 
   "eslint.run": "onSave",
   "eslint.format.enable": true,
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
 
   // typescript / javascript
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -219,12 +223,14 @@
     "--log=verbose",
     "--pretty",
     "--fallback-style=Google",
-    "--pch-storage=memory"
+    "--pch-storage=memory",
+    "--limit-results=0"
   ],
   "clangd.onConfigChanged": "restart",
 
   // files
   "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
   "files.exclude": {
@@ -243,7 +249,17 @@
     "**/coverage/**": true,
     "**/.vscode/**": true,
     "**/.turbo/**": true,
-    "**/out/**": true
+    "**/out/**": true,
+    "**/*.o": true,
+    "**/*.a": true,
+    "**/*.so": true,
+    "**/compile_commands.json": false
+  },
+  "files.associations": {
+    "*.h": "c",
+    "*.hpp": "cpp",
+    "*.tcc": "cpp",
+    "*.ipp": "cpp"
   },
 
   // search
@@ -259,12 +275,14 @@
     "**/package-lock.json": true,
     "**/pnpm-lock.yaml": true
   },
+  "search.smartCase": true,
 
   // explorer
   "explorer.compactFolders": false,
 
   // diff editor
   "diffEditor.codeLens": true,
+  "diffEditor.ignoreTrimWhitespace": false,
 
   // extensions
   "extensions.autoCheckUpdates": false,
@@ -332,10 +350,13 @@
   // code runner
   "code-runner.saveFileBeforeRun": true,
   "code-runner.clearPreviousOutput": true,
+  "code-runner.runInTerminal": true,
 
   // disable unused things
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
+  "update.mode": "manual",
+  "update.showReleaseNotes": false,
 
   // themes
   "workbench.colorTheme": "Dracula Theme",
