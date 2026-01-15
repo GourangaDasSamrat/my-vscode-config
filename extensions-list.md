@@ -12,7 +12,6 @@
 ## Optional
 
 - WordHub
-- Time
 - shfmt (its only for default profile)
 
 ## Web Dev Profile (for web development)
