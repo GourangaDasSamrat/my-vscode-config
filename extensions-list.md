@@ -14,7 +14,7 @@
 - WordHub
 - shfmt (its only for default profile)
 
-## Web Dev Profile (for web development)
+## Frontend Dev Profile (for frontend web development)
 
 - Prettier - Code formatter
 - ESLint

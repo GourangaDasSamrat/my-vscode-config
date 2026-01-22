@@ -1,5 +1,9 @@
 [
   {
+  "key": "ctrl+alt+p",
+  "command": "workbench.profiles.actions.switchProfile"
+  },
+  {
     "key": "ctrl+n",
     "command": "explorer.newFile"
   },
